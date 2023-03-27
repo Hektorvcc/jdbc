@@ -1,11 +1,12 @@
-app:
+spring:
   datasource:
-    main:
-      driver-class-name: org.postgresql.Driver
-      jdbc-url: jdbc:postgresql://localhost:5432/amigoscode
-      username: amigoscode
-      password: 'password'
-      pool-size: 30
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/amigoscode
+    username: amigoscode
+    password: password
+  flyway:
+    enabled: true
+    schemas: public
 
 server:
   error:
